@@ -80,8 +80,12 @@ body {
     flex: 1 1 auto;
 }
 
-.page__section {
+.page__section-padding-m {
     padding: 50px 0;
+}
+
+.page__section-padding-s {
+    padding: 30px 0;
 }
 
 .page__section-shadow {
@@ -285,8 +289,8 @@ body {
     position: relative;
     z-index: 1;
 
-    padding-top: 150px;
-    padding-bottom: 30px;
+    padding-top: 130px;
+    padding-bottom: 50px;
 }
 
 .intro__inner {
@@ -392,10 +396,6 @@ body {
 
 
 /* Work Photo */
-.work-photo {
-    padding: 50px 0;
-}
-
 .work-photo__header {
     margin-bottom: 30px;
 }
@@ -832,8 +832,8 @@ body {
 
 
 /* team  */
-.team__container{
-    padding: 0;
+.team {
+    padding-top: 50px;
 }
 
 .team__inner{
@@ -875,10 +875,6 @@ body {
 
 
 /* promotion */
-.promotion {
-    padding-bottom: 50px;
-}
-
 .promotion__inner {
     display: flex;
     align-items: flex-end;
