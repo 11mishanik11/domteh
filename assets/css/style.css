@@ -656,6 +656,7 @@ body {
     color:#D8C298;
 
     transform: translateX(-50%);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 .result__btn {
@@ -821,7 +822,7 @@ body {
     border-bottom: none;
 }
 
-.benifits__icon {
+.benefits__icon {
     margin-right: 15px;
     padding: 7px;
 
@@ -830,7 +831,7 @@ body {
     background: linear-gradient(92.68deg, #262626 0%, #222222 100%);
 }
 
-.benifits__value {
+.benefits__value {
     color: var(--main-color);
 }
 
@@ -884,6 +885,7 @@ body {
 
 /* promotion */
 .promotion__inner {
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -893,6 +895,13 @@ body {
     background: linear-gradient(127.32deg, #313131 0%, #222222 98.16%);
     box-shadow: 1px 0px 32px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
+}
+
+.promotion__img-phone {
+    max-width: 140px;
+    position: absolute;
+    right: 0;
+    top: -30px;
 }
 
 .promotion__image {
@@ -968,10 +977,6 @@ body {
 
 
 /* docs */
-.docs {
-    padding-bottom: 50px;
-}
-
 .docs__inner {
     display: flex;
     justify-content: space-between;
@@ -1007,27 +1012,46 @@ body {
 
 
 /* Adress */
-.address__container {
-    padding: 0;
+.address {
+    padding-bottom: 0;
 }
 
 .address__item {
     position: relative;
     margin-bottom: 25px;
+}
 
-    text-align: center;
+.address__item:last-child {
+    margin-bottom: 0;
 }
 
 .address__img {
     border-radius: 5px; 
 }
 
-.address__text {
-    margin-top: -25px;
+.address__info {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 
 /* push-contact */
+.push-contact {
+    padding-bottom: 50px;
+}
+
 .push-contact__inner {
     padding: 24px;
 
@@ -1060,6 +1084,7 @@ body {
 
     border-radius: 5px;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.35);
 
     transition: transform linear .2s ;
 }
@@ -1078,7 +1103,6 @@ body {
 
 .push-contact__input:focus {
     outline: none;
-    transform: scale(1.05);
 }
 
 .push-contact__btn {

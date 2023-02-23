@@ -5,20 +5,9 @@ $(document).ready(function() {
         $('#menu').slideToggle(500)
     });
 
-    // work
+    // main slider
     $('.main-slider').slick({
         arrows: false,
-
-        centerMode: true,
-        variableWidth: true,
-
-        infinite: false,
-    });
-
-    // promotion
-    $('#promotion-slides').slick({
-        arrows: false,
-        dots: true,
 
         centerMode: true,
         variableWidth: true,
